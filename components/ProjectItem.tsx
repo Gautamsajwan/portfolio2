@@ -10,7 +10,7 @@ export default function ProjectItem({ title, image, description }: Props) {
     return (
         <div className="w-full snap-center flex flex-shrink-0 flex-col justify-center items-center p-10 md:p-32">
             <div className="relative w-[400px] outline outline-[5px] outline-[#dbfffd]/40 rounded-lg">
-                {/* <img src={image} alt="project image" className="w-full h-full object-cover rounded-lg" /> */}
+                <img src={image} alt="project image" className="w-full h-full object-cover rounded-lg" />
                 <div className="absolute top-14 w-[100%] h-[70%] bg-gradient-to-r from-[#6a11cb] to-[#2575fc] -z-10 blur-[70px]"></div>
             </div>
 

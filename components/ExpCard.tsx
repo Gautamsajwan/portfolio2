@@ -1,7 +1,6 @@
 import React from 'react'
 
 type Props = {
-  key: string,
   logo: string,
   eventName: string,
   org: string,
@@ -10,9 +9,9 @@ type Props = {
   work: string[]
 }
 
-export default function ExpCard({ key, logo, eventName, org, techStack, duration, work }: Props) {
+export default function ExpCard({ logo, eventName, org, techStack, duration, work }: Props) {
   return (
-    <article key={key} className="w-[350px] lg:w-[420px] xl:w-[480px] h-full px-5 py-4 snap-center cursor-pointer flex flex-col items-center flex-shrink-0 rounded-2xl bg-[#2a2c2b] overflow-hidden z-20">
+    <article className="w-[350px] lg:w-[420px] xl:w-[480px] h-full px-5 py-4 snap-center cursor-pointer flex flex-col items-center flex-shrink-0 rounded-2xl bg-[#2a2c2b] overflow-hidden z-20">
       <img className="h-24 w-24 object-cover rounded-full bg-gray-500" src={logo} alt="brand logo" />
 
       <div className="h-[78%] mt-3 py-3 lg:px-3 flex flex-col items-center">

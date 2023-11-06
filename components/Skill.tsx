@@ -2,17 +2,15 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {
-  key: string,
   directionLeft?: boolean,
   imageUrl?: string,
   proficiency?: string,
   name?: string
 }
 
-export default function Skill({ key, directionLeft, imageUrl, proficiency, name }: Props) {
+export default function Skill({ directionLeft, imageUrl, proficiency, name }: Props) {
   return (
     <motion.div 
-      key={key}
       initial={{
         x: directionLeft ? -200 : 200,
         opacity: 0,

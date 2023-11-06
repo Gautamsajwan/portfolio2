@@ -20,15 +20,15 @@ export default function ExpCard({ key, logo, eventName, org, techStack, duration
           <h2 className="text-2xl text-center font-semibold">{eventName}</h2>
           <p className="mt-2 p-2 h-[65px] w-full text-base grid place-items-center font-bold text-center bg-black/40">{org}</p>
 
-          {/* <p className="text-center">--- {techStack} ---</p> */}
+          <p className="text-center">--- {techStack} ---</p>
 
           <p className="text-black font-semibold mt-3 px-3 py-2 text-sm bg-gray-200 rounded-full">{duration}</p>
         </div>
-        {/* <ul className="px-5 mt-3 list-disc space-y-3 flex-grow overflow-y-scroll scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-[#5a5a5a]">
+        <ul className="px-5 mt-3 list-disc space-y-3 flex-grow overflow-y-scroll scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-[#5a5a5a]">
           {work.map((details, index) => (
             <li key={index}>{details}</li>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </article>
   )

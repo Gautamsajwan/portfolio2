@@ -6,7 +6,7 @@ import skillData from './SkillData.js'
 
 type Props = {}
 
-export default function({ }: Props) {
+export default function Skills({ }: Props) {
   const [skillState, setSkillState] = useState(skillData)
   return (
     <motion.div
@@ -32,6 +32,7 @@ export default function({ }: Props) {
             <Skill key={`${skill.name}+${index}`} directionLeft={skill.directionLeft} imageUrl={skill.imageUrl} proficiency={skill.proficiency} name={skill.name}/>
           ))
         }
+        
       </div>
     </motion.div>
   )
